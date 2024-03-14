@@ -13,8 +13,8 @@ zuul:
   routes:
     user-service:
       path: /users/**
-      #url: http://localhost:8081/users/
-      url: https://user.the-capacity.com/users/
+      url: http://localhost:8081/users/
+      #url: https://google.com/users/
       sensitiveHeaders: Cookie,Set-Cookie,Authorization,Auth-Token
     #email:
     #  path: /email/**
@@ -31,5 +31,4 @@ eureka:
     register-with-eureka: true
     service-url:
       #default-time-zone: http://localhost:8761/eureka
-      defaultZone: https://admin:irb1234@discovery.the-capacity.com/eureka
-      #defaultZone: http://admin:irb1234@localhost:8761/eureka
+      #defaultZone: http://localhost:8761/eureka
